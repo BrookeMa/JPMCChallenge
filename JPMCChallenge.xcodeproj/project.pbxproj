@@ -17,6 +17,7 @@
 		A858119129FBAA4600406187 /* JPMCChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119029FBAA4600406187 /* JPMCChallengeTests.swift */; };
 		A858119B29FBAA4600406187 /* JPMCChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119A29FBAA4600406187 /* JPMCChallengeUITests.swift */; };
 		A858119D29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119C29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift */; };
+		A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A858119629FBAA4600406187 /* JPMCChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A858119A29FBAA4600406187 /* JPMCChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITests.swift; sourceTree = "<group>"; };
 		A858119C29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		A858117529FBAA4500406187 /* JPMCChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A8A5E46929FCD76D002ACC4D /* Shared API */,
 				A858117629FBAA4500406187 /* AppDelegate.swift */,
 				A858117829FBAA4500406187 /* SceneDelegate.swift */,
 				A858117A29FBAA4500406187 /* ViewController.swift */,
@@ -128,6 +131,14 @@
 				A858119C29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift */,
 			);
 			path = JPMCChallengeUITests;
+			sourceTree = "<group>";
+		};
+		A8A5E46929FCD76D002ACC4D /* Shared API */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */,
+			);
+			path = "Shared API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			files = (
 				A858117B29FBAA4500406187 /* ViewController.swift in Sources */,
 				A858117729FBAA4500406187 /* AppDelegate.swift in Sources */,
+				A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */,
 				A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */,
 				A858118129FBAA4500406187 /* JPMCChallenge.xcdatamodeld in Sources */,
 			);
@@ -449,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,6 +490,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
