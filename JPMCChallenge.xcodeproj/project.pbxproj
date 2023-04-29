@@ -22,6 +22,9 @@
 		A8A5E47829FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47729FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift */; };
 		A8A5E47B29FCDDDF002ACC4D /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */; };
 		A8A5E47D29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */; };
+		A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */; };
+		A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48229FCEB9F002ACC4D /* Planet.swift */; };
+		A8A5E48629FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		A8A5E47729FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetItemsMapper.swift; sourceTree = "<group>"; };
+		A8A5E48229FCEB9F002ACC4D /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,8 @@
 		A858117529FBAA4500406187 /* JPMCChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A8A5E48129FCEB8A002ACC4D /* Planet Feature */,
+				A8A5E47E29FCE07A002ACC4D /* Planet API */,
 				A8A5E47229FCDC16002ACC4D /* Shared API Infra */,
 				A8A5E46929FCD76D002ACC4D /* Shared API */,
 				A858117629FBAA4500406187 /* AppDelegate.swift */,
@@ -181,6 +189,31 @@
 			children = (
 				A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */,
 				A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8A5E47E29FCE07A002ACC4D /* Planet API */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E48429FCF8CB002ACC4D /* Helpers */,
+				A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */,
+			);
+			path = "Planet API";
+			sourceTree = "<group>";
+		};
+		A8A5E48129FCEB8A002ACC4D /* Planet Feature */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E48229FCEB9F002ACC4D /* Planet.swift */,
+			);
+			path = "Planet Feature";
+			sourceTree = "<group>";
+		};
+		A8A5E48429FCF8CB002ACC4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -317,10 +350,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A858117B29FBAA4500406187 /* ViewController.swift in Sources */,
+				A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */,
 				A858117729FBAA4500406187 /* AppDelegate.swift in Sources */,
+				A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */,
 				A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */,
 				A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */,
 				A858118129FBAA4500406187 /* JPMCChallenge.xcdatamodeld in Sources */,
+				A8A5E48629FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift in Sources */,
 				A8A5E47429FCDC34002ACC4D /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
