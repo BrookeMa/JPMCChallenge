@@ -14,10 +14,14 @@
 		A858118129FBAA4500406187 /* JPMCChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A858117F29FBAA4500406187 /* JPMCChallenge.xcdatamodeld */; };
 		A858118329FBAA4600406187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A858118229FBAA4600406187 /* Assets.xcassets */; };
 		A858118629FBAA4600406187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A858118429FBAA4600406187 /* LaunchScreen.storyboard */; };
-		A858119129FBAA4600406187 /* JPMCChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119029FBAA4600406187 /* JPMCChallengeTests.swift */; };
 		A858119B29FBAA4600406187 /* JPMCChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119A29FBAA4600406187 /* JPMCChallengeUITests.swift */; };
 		A858119D29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858119C29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift */; };
 		A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */; };
+		A8A5E47129FCDBBF002ACC4D /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47029FCDBBF002ACC4D /* URLProtocolStub.swift */; };
+		A8A5E47429FCDC34002ACC4D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47329FCDC34002ACC4D /* URLSessionHTTPClient.swift */; };
+		A8A5E47829FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47729FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift */; };
+		A8A5E47B29FCDDDF002ACC4D /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */; };
+		A8A5E47D29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +52,15 @@
 		A858118529FBAA4600406187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A858118729FBAA4600406187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A858118C29FBAA4600406187 /* JPMCChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A858119029FBAA4600406187 /* JPMCChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeTests.swift; sourceTree = "<group>"; };
 		A858119629FBAA4600406187 /* JPMCChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMCChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A858119A29FBAA4600406187 /* JPMCChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITests.swift; sourceTree = "<group>"; };
 		A858119C29FBAA4600406187 /* JPMCChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMCChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		A8A5E47029FCDBBF002ACC4D /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		A8A5E47329FCDC34002ACC4D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		A8A5E47729FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 		A858117529FBAA4500406187 /* JPMCChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A8A5E47229FCDC16002ACC4D /* Shared API Infra */,
 				A8A5E46929FCD76D002ACC4D /* Shared API */,
 				A858117629FBAA4500406187 /* AppDelegate.swift */,
 				A858117829FBAA4500406187 /* SceneDelegate.swift */,
@@ -119,7 +128,8 @@
 		A858118F29FBAA4600406187 /* JPMCChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				A858119029FBAA4600406187 /* JPMCChallengeTests.swift */,
+				A8A5E47929FCDDD2002ACC4D /* Helpers */,
+				A8A5E46F29FCDBB4002ACC4D /* Shared API Infra */,
 			);
 			path = JPMCChallengeTests;
 			sourceTree = "<group>";
@@ -139,6 +149,40 @@
 				A8A5E46A29FCD77D002ACC4D /* HTTPClient.swift */,
 			);
 			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		A8A5E46F29FCDBB4002ACC4D /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E47629FCDD99002ACC4D /* Helpers */,
+				A8A5E47729FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		A8A5E47229FCDC16002ACC4D /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E47329FCDC34002ACC4D /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		A8A5E47629FCDD99002ACC4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E47029FCDBBF002ACC4D /* URLProtocolStub.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8A5E47929FCDDD2002ACC4D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E47A29FCDDDF002ACC4D /* SharedTestHelpers.swift */,
+				A8A5E47C29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +321,7 @@
 				A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */,
 				A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */,
 				A858118129FBAA4500406187 /* JPMCChallenge.xcdatamodeld in Sources */,
+				A8A5E47429FCDC34002ACC4D /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A858119129FBAA4600406187 /* JPMCChallengeTests.swift in Sources */,
+				A8A5E47829FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift in Sources */,
+				A8A5E47D29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				A8A5E47129FCDBBF002ACC4D /* URLProtocolStub.swift in Sources */,
+				A8A5E47B29FCDDDF002ACC4D /* SharedTestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
