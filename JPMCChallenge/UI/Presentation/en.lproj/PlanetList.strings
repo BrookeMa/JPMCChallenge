@@ -1,0 +1,21 @@
+/* 
+  App.strings
+  JPMCChallenge
+
+  Created by Ye Ma on 01/05/2023.
+  
+*/
+
+"PLANET_LIST_NAME" = "Name";
+"PLANET_LIST_ROTATION_PERIOD" = "Rotation Period";
+"PLANET_LIST_ORBITAL_PERIOD" = "Orbital Period";
+"PLANET_LIST_DIAMETER" = "Diameter";
+"PLANET_LIST_CLIMATE" = "Climate";
+"PLANET_LIST_GRAVITY" = "Gravity";
+"PLANET_LIST_TERRAIN" = "Terrain";
+"PLANET_LIST_SURFACE_WATER" = "Surface Water";
+"PLANET_LIST_POPULATION" = "Population";
+"PLANET_LIST_RESIDENTS" = "Residents";
+"PLANET_LIST_FILMS" = "Films";
+"PLANET_LIST_CREATED" = "Created";
+"PLANET_LIST_EDITED" = "Edited";

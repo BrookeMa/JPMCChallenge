@@ -1,0 +1,21 @@
+/* 
+  App.strings
+  JPMCChallenge
+
+  Created by Ye Ma on 01/05/2023.
+  
+*/
+
+"PLANET_LIST_NAME" = "名称";
+"PLANET_LIST_ROTATION_PERIOD" = "自转周期";
+"PLANET_LIST_ORBITAL_PERIOD" = "公转周期";
+"PLANET_LIST_DIAMETER" = "直径";
+"PLANET_LIST_CLIMATE" = "气候";
+"PLANET_LIST_GRAVITY" = "重力";
+"PLANET_LIST_TERRAIN" = "地形";
+"PLANET_LIST_SURFACE_WATER" = "地表水";
+"PLANET_LIST_POPULATION" = "人口";
+"PLANET_LIST_RESIDENTS" = "居民";
+"PLANET_LIST_FILMS" = "电影";
+"PLANET_LIST_CREATED" = "创建时间";
+"PLANET_LIST_EDITED" = "编辑时间";

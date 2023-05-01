@@ -28,6 +28,8 @@
 		A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48929FE2D37002ACC4D /* RemotePlanetLoader.swift */; };
 		A8A5E48D29FE3002002ACC4D /* RemotePlanetLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48C29FE3002002ACC4D /* RemotePlanetLoaderTests.swift */; };
 		A8CA229A29FFA4BF001EE086 /* PlanetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA229929FFA4BF001EE086 /* PlanetListViewController.swift */; };
+		A8CA229E29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA229D29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift */; };
+		A8CA22A429FFAF52001EE086 /* PlanetList.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8CA22A629FFAF52001EE086 /* PlanetList.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,11 @@
 		A8A5E48929FE2D37002ACC4D /* RemotePlanetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlanetLoader.swift; sourceTree = "<group>"; };
 		A8A5E48C29FE3002002ACC4D /* RemotePlanetLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlanetLoaderTests.swift; sourceTree = "<group>"; };
 		A8CA229929FFA4BF001EE086 /* PlanetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewController.swift; sourceTree = "<group>"; };
+		A8CA229D29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewTableViewCell.swift; sourceTree = "<group>"; };
+		A8CA22A029FFAEEF001EE086 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		A8CA22A129FFAEEF001EE086 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A8CA22A529FFAF52001EE086 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PlanetList.strings; sourceTree = "<group>"; };
+		A8CA22A729FFAF54001EE086 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/PlanetList.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +245,8 @@
 		A8CA229829FFA4B4001EE086 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A8CA229F29FFAED6001EE086 /* Presentation */,
+				A8CA229C29FFA8C1001EE086 /* Views */,
 				A8CA229B29FFA4C2001EE086 /* Controllers */,
 			);
 			path = UI;
@@ -249,6 +258,22 @@
 				A8CA229929FFA4BF001EE086 /* PlanetListViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A8CA229C29FFA8C1001EE086 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8CA229D29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8CA229F29FFAED6001EE086 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A8CA22A629FFAF52001EE086 /* PlanetList.strings */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +362,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A858116A29FBAA4500406187;
 			productRefGroup = A858117429FBAA4500406187 /* Products */;
@@ -355,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CA22A429FFAF52001EE086 /* PlanetList.strings in Resources */,
 				A858118629FBAA4600406187 /* LaunchScreen.storyboard in Resources */,
 				A858118329FBAA4600406187 /* Assets.xcassets in Resources */,
 				A858117E29FBAA4500406187 /* Main.storyboard in Resources */,
@@ -384,6 +411,7 @@
 			files = (
 				A8A5E48829FE2C83002ACC4D /* PlanetLoader.swift in Sources */,
 				A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */,
+				A8CA229E29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift in Sources */,
 				A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */,
 				A858117729FBAA4500406187 /* AppDelegate.swift in Sources */,
 				A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */,
@@ -437,6 +465,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A858117D29FBAA4500406187 /* Base */,
+				A8CA22A029FFAEEF001EE086 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -445,8 +474,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				A858118529FBAA4600406187 /* Base */,
+				A8CA22A129FFAEEF001EE086 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8CA22A629FFAF52001EE086 /* PlanetList.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8CA22A529FFAF52001EE086 /* en */,
+				A8CA22A729FFAF54001EE086 /* zh-Hans */,
+			);
+			name = PlanetList.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -516,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
