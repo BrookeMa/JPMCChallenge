@@ -7,7 +7,13 @@
 
 import UIKit
 
-public final class PlanetListViewController: UIViewController {
+public final class PlanetListViewController: UITableViewController, UITableViewDataSourcePrefetching {
     
+    public override func viewDidLoad() {
+        
+    }
     
+    public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        
+    }
 }
