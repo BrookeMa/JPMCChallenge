@@ -25,6 +25,9 @@
 		A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */; };
 		A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48229FCEB9F002ACC4D /* Planet.swift */; };
 		A8A5E48629FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */; };
+		A8A5E48829FE2C83002ACC4D /* PlanetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48729FE2C83002ACC4D /* PlanetLoader.swift */; };
+		A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48929FE2D37002ACC4D /* RemotePlanetLoader.swift */; };
+		A8A5E48D29FE3002002ACC4D /* RemotePlanetLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A5E48C29FE3002002ACC4D /* RemotePlanetLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,9 @@
 		A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetItemsMapper.swift; sourceTree = "<group>"; };
 		A8A5E48229FCEB9F002ACC4D /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		A8A5E48729FE2C83002ACC4D /* PlanetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLoader.swift; sourceTree = "<group>"; };
+		A8A5E48929FE2D37002ACC4D /* RemotePlanetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlanetLoader.swift; sourceTree = "<group>"; };
+		A8A5E48C29FE3002002ACC4D /* RemotePlanetLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemotePlanetLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		A858118F29FBAA4600406187 /* JPMCChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A8A5E48B29FE2FEF002ACC4D /* Planet API */,
 				A8A5E47929FCDDD2002ACC4D /* Helpers */,
 				A8A5E46F29FCDBB4002ACC4D /* Shared API Infra */,
 			);
@@ -198,6 +205,7 @@
 			children = (
 				A8A5E48429FCF8CB002ACC4D /* Helpers */,
 				A8A5E47F29FCE09F002ACC4D /* PlanetItemsMapper.swift */,
+				A8A5E48929FE2D37002ACC4D /* RemotePlanetLoader.swift */,
 			);
 			path = "Planet API";
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				A8A5E48229FCEB9F002ACC4D /* Planet.swift */,
+				A8A5E48729FE2C83002ACC4D /* PlanetLoader.swift */,
 			);
 			path = "Planet Feature";
 			sourceTree = "<group>";
@@ -216,6 +225,14 @@
 				A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8A5E48B29FE2FEF002ACC4D /* Planet API */ = {
+			isa = PBXGroup;
+			children = (
+				A8A5E48C29FE3002002ACC4D /* RemotePlanetLoaderTests.swift */,
+			);
+			path = "Planet API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,7 +366,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A5E48829FE2C83002ACC4D /* PlanetLoader.swift in Sources */,
 				A858117B29FBAA4500406187 /* ViewController.swift in Sources */,
+				A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */,
 				A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */,
 				A858117729FBAA4500406187 /* AppDelegate.swift in Sources */,
 				A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */,
@@ -365,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A5E48D29FE3002002ACC4D /* RemotePlanetLoaderTests.swift in Sources */,
 				A8A5E47829FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift in Sources */,
 				A8A5E47D29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				A8A5E47129FCDBBF002ACC4D /* URLProtocolStub.swift in Sources */,

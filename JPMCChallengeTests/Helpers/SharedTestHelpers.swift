@@ -19,8 +19,11 @@ func anyData() -> Data {
     return Data("any data".utf8)
 }
 
-func makeItemsJSON(_ items: [[String: Any]]) -> Data {
-    let json = ["data": items]
+func makeItemsJSON(_ items: [[String: Any]], count: Int = 0, next: String? = nil, previous: String? = nil) -> Data {
+    let json: [String : Any] = ["results": items,
+                                "count": count,
+                                "next": next ?? NSNull(),
+                                "previous": previous ?? NSNull()]
     return try! JSONSerialization.data(withJSONObject: json)
 }
 
