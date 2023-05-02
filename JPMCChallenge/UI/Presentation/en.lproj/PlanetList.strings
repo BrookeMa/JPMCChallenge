@@ -19,3 +19,4 @@
 "PLANET_LIST_FILMS" = "Films";
 "PLANET_LIST_CREATED" = "Created";
 "PLANET_LIST_EDITED" = "Edited";
+"PLANET_LIST_VIEW_CONNECTION_ERROR" = "Couldn't connect to server"

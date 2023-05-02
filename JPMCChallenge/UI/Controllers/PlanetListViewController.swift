@@ -9,6 +9,16 @@ import UIKit
 
 public final class PlanetListViewController: UITableViewController, UITableViewDataSourcePrefetching {
     
+    var viewModel: PlanetListViewModel? {
+        didSet {
+            bind()
+        }
+    }
+    
+    private func bind() {
+        
+    }
+    
     public override func viewDidLoad() {
         
     }

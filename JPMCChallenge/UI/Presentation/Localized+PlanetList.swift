@@ -101,5 +101,12 @@ extension Localized {
                               bundle: bundle,
                               comment: "Last edit date of the planet record")
         }
+        
+        static var loadError: String {
+            NSLocalizedString("PLANET_LIST_VIEW_CONNECTION_ERROR",
+                              tableName: table,
+                              bundle: bundle,
+                              comment: "Error message displayed when we can't load the articles from the server")
+        }
     }
 }
