@@ -10,7 +10,27 @@ import UIKit
 public final class PlanetUIComposer {
     public init() {}
     
+    public static func planetListComposedWith(planetLoader: PlanetLoader) -> PlanetListViewController {
+        let viewModel = PlanetListViewModel(planetLoader: MainQueueDispatchDecorator(decoratee: planetLoader))
+        
+        let viewController = PlanetListViewController.makeWith(viewModel: viewModel)
+        
+        viewModel.onPlanetsLoad = adaptPlanetToCellControllers(forwardingTo: viewController)
+        
+        return viewController
+    }
     
+    private static func adaptPlanetToCellControllers(forwardingTo controller: PlanetListViewController) -> ([Planet]) -> Void {
+        return { [weak controller] planets in
+            controller?.tableModel = planets.map { planet in
+                let selection: () -> Void = {
+                    
+                }
+                let viewModel = PlanetViewModel(model: planet)
+                return PlanetCellController(viewModel: viewModel, selection: selection)
+            }
+        }
+    }
 }
 
 private extension PlanetListViewController {

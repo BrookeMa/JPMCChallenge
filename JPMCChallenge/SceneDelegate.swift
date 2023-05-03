@@ -22,9 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let session = URLSession(configuration: .ephemeral)
         let client = URLSessionHTTPClient(session: session)
         let remotePlanetLoader = RemotePlanetLoader(url: url, client: client)
+        let planetViewController = PlanetUIComposer.planetListComposedWith(planetLoader: remotePlanetLoader)
         
-        
-        
+        window?.rootViewController = planetViewController
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
