@@ -129,7 +129,7 @@ public final class PlanetListViewTableViewCell: UITableViewCell {
             label.topAnchor.constraint(equalTo: diameterLabel.topAnchor),
             label.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
             label.leftAnchor.constraint(equalTo: diameterLabel.rightAnchor, constant: 10),
-            label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+            label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -18)
         ])
 
         return label

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ManagedCache" representedClassName="ManagedCache" syncable="YES">
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="planets" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ManagedPlanet" inverseName="cache" inverseEntity="ManagedPlanet"/>
+    </entity>
+    <entity name="ManagedPlanet" representedClassName="ManagedPlanet" syncable="YES">
+        <attribute name="climate" attributeType="String"/>
+        <attribute name="created" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="diameter" attributeType="String"/>
+        <attribute name="edited" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="films" attributeType="Transformable" valueTransformerName="URLTransformer"/>
+        <attribute name="gravity" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="orbitalPeriod" attributeType="String"/>
+        <attribute name="population" attributeType="String"/>
+        <attribute name="residents" attributeType="Transformable" valueTransformerName="URLTransformer"/>
+        <attribute name="rotationPeriod" attributeType="String"/>
+        <attribute name="surfaceWater" attributeType="String"/>
+        <attribute name="terrain" attributeType="String"/>
+        <attribute name="url" attributeType="URI"/>
+        <relationship name="cache" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedCache" inverseName="planets" inverseEntity="ManagedCache"/>
+    </entity>
+</model>

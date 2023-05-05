@@ -1,13 +1,13 @@
 //
-//  Planet.swift
+//  LocalPlanet.swift
 //  JPMCChallenge
 //
-//  Created by Ye Ma on 29/04/2023.
+//  Created by Ye Ma on 04/05/2023.
 //
 
 import Foundation
 
-public struct Planet: Equatable {
+public struct LocalPlanet: Equatable {
     public let name: String
     public let rotationPeriod: String
     public let orbitalPeriod: String
@@ -23,20 +23,7 @@ public struct Planet: Equatable {
     public let edited: Date
     public let url: URL
     
-    public init(name: String,
-                rotationPeriod: String,
-                orbitalPeriod: String,
-                diameter: String,
-                climate: String,
-                gravity: String,
-                terrain: String,
-                surfaceWater: String,
-                population: String,
-                residents: [URL],
-                films: [URL],
-                created: Date,
-                edited: Date,
-                url: URL) {
+    public init(name: String, rotationPeriod: String, orbitalPeriod: String, diameter: String, climate: String, gravity: String, terrain: String, surfaceWater: String, population: String, residents: [URL], films: [URL], created: Date, edited: Date, url: URL) {
         self.name = name
         self.rotationPeriod = rotationPeriod
         self.orbitalPeriod = orbitalPeriod
@@ -51,6 +38,5 @@ public struct Planet: Equatable {
         self.created = created
         self.edited = edited
         self.url = url
-        
     }
 }

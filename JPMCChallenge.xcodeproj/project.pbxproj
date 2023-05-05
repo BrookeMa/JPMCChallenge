@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A810DC582A03DDE600314DD0 /* PlanetStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC572A03DDE600314DD0 /* PlanetStoreSpecs.swift */; };
+		A810DC5A2A03EE1A00314DD0 /* XCTestCase+PlanetStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC592A03EE1A00314DD0 /* XCTestCase+PlanetStoreSpecs.swift */; };
+		A810DC5C2A03EE9200314DD0 /* PlanetCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC5B2A03EE9200314DD0 /* PlanetCacheTestHelpers.swift */; };
+		A810DC5E2A049B4800314DD0 /* CoreDataPlanetStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC5D2A049B4800314DD0 /* CoreDataPlanetStoreTests.swift */; };
+		A810DC602A049BEE00314DD0 /* CachePlanetUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC5F2A049BEE00314DD0 /* CachePlanetUseCaseTests.swift */; };
+		A810DC632A049CA100314DD0 /* PlanetStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC622A049CA100314DD0 /* PlanetStoreSpy.swift */; };
+		A810DC652A04A76A00314DD0 /* LocalPlanetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */; };
+		A810DC672A04CB6600314DD0 /* URLTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC662A04CB6600314DD0 /* URLTransformer.swift */; };
 		A858117729FBAA4500406187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858117629FBAA4500406187 /* AppDelegate.swift */; };
 		A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858117829FBAA4500406187 /* SceneDelegate.swift */; };
 		A858117E29FBAA4500406187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A858117C29FBAA4500406187 /* Main.storyboard */; };
@@ -39,6 +47,13 @@
 		A8CA22BA2A01046B001EE086 /* PlanetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22B92A01046B001EE086 /* PlanetViewModel.swift */; };
 		A8CA22BE2A025799001EE086 /* PlanetCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22BD2A025799001EE086 /* PlanetCellController.swift */; };
 		A8CA22C02A025A90001EE086 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22BF2A025A90001EE086 /* UITableView+Dequeueing.swift */; };
+		A8CA22C52A03792B001EE086 /* PlanetStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22C32A03792B001EE086 /* PlanetStore.xcdatamodeld */; };
+		A8CA22CB2A039942001EE086 /* ManagedPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22CA2A039942001EE086 /* ManagedPlanet.swift */; };
+		A8CA22CD2A03A6E0001EE086 /* LocalPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22CC2A03A6E0001EE086 /* LocalPlanet.swift */; };
+		A8CA22CF2A03AD36001EE086 /* CoreDataPlanetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22CE2A03AD35001EE086 /* CoreDataPlanetStore.swift */; };
+		A8CA22D12A03AF14001EE086 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22D02A03AF14001EE086 /* CoreDataHelpers.swift */; };
+		A8CA22D52A03AF74001EE086 /* PlanetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22D42A03AF74001EE086 /* PlanetStore.swift */; };
+		A8CA22D72A03B3DA001EE086 /* ManagedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CA22D62A03B3DA001EE086 /* ManagedCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +74,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A810DC572A03DDE600314DD0 /* PlanetStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetStoreSpecs.swift; sourceTree = "<group>"; };
+		A810DC592A03EE1A00314DD0 /* XCTestCase+PlanetStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+PlanetStoreSpecs.swift"; sourceTree = "<group>"; };
+		A810DC5B2A03EE9200314DD0 /* PlanetCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCacheTestHelpers.swift; sourceTree = "<group>"; };
+		A810DC5D2A049B4800314DD0 /* CoreDataPlanetStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlanetStoreTests.swift; sourceTree = "<group>"; };
+		A810DC5F2A049BEE00314DD0 /* CachePlanetUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlanetUseCaseTests.swift; sourceTree = "<group>"; };
+		A810DC622A049CA100314DD0 /* PlanetStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetStoreSpy.swift; sourceTree = "<group>"; };
+		A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPlanetLoader.swift; sourceTree = "<group>"; };
+		A810DC662A04CB6600314DD0 /* URLTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransformer.swift; sourceTree = "<group>"; };
 		A858117329FBAA4500406187 /* JPMCChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMCChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A858117629FBAA4500406187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A858117829FBAA4500406187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +121,13 @@
 		A8CA22B92A01046B001EE086 /* PlanetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewModel.swift; sourceTree = "<group>"; };
 		A8CA22BD2A025799001EE086 /* PlanetCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCellController.swift; sourceTree = "<group>"; };
 		A8CA22BF2A025A90001EE086 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
+		A8CA22C42A03792B001EE086 /* CoreDataPlanetStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPlanetStore.xcdatamodel; sourceTree = "<group>"; };
+		A8CA22CA2A039942001EE086 /* ManagedPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedPlanet.swift; sourceTree = "<group>"; };
+		A8CA22CC2A03A6E0001EE086 /* LocalPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPlanet.swift; sourceTree = "<group>"; };
+		A8CA22CE2A03AD35001EE086 /* CoreDataPlanetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlanetStore.swift; sourceTree = "<group>"; };
+		A8CA22D02A03AF14001EE086 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
+		A8CA22D42A03AF74001EE086 /* PlanetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetStore.swift; sourceTree = "<group>"; };
+		A8CA22D62A03B3DA001EE086 /* ManagedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +155,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A810DC552A03DDBA00314DD0 /* Planet Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A810DC612A049C9100314DD0 /* Helpers */,
+				A810DC562A03DDC800314DD0 /* PlanetStoreSpecs */,
+				A810DC5B2A03EE9200314DD0 /* PlanetCacheTestHelpers.swift */,
+				A810DC5D2A049B4800314DD0 /* CoreDataPlanetStoreTests.swift */,
+				A810DC5F2A049BEE00314DD0 /* CachePlanetUseCaseTests.swift */,
+			);
+			path = "Planet Cache";
+			sourceTree = "<group>";
+		};
+		A810DC562A03DDC800314DD0 /* PlanetStoreSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				A810DC572A03DDE600314DD0 /* PlanetStoreSpecs.swift */,
+				A810DC592A03EE1A00314DD0 /* XCTestCase+PlanetStoreSpecs.swift */,
+			);
+			path = PlanetStoreSpecs;
+			sourceTree = "<group>";
+		};
+		A810DC612A049C9100314DD0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A810DC622A049CA100314DD0 /* PlanetStoreSpy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A858116A29FBAA4500406187 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +207,7 @@
 		A858117529FBAA4500406187 /* JPMCChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				A8CA22C12A03778E001EE086 /* Planet Cache */,
 				A8CA22A829FFBC52001EE086 /* Shared Presentation */,
 				A8CA229829FFA4B4001EE086 /* UI */,
 				A8A5E48129FCEB8A002ACC4D /* Planet Feature */,
@@ -168,6 +228,7 @@
 		A858118F29FBAA4600406187 /* JPMCChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				A810DC552A03DDBA00314DD0 /* Planet Cache */,
 				A8A5E48B29FE2FEF002ACC4D /* Planet API */,
 				A8A5E47929FCDDD2002ACC4D /* Helpers */,
 				A8A5E46F29FCDBB4002ACC4D /* Shared API Infra */,
@@ -327,6 +388,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A8CA22C12A03778E001EE086 /* Planet Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A8CA22C22A03779E001EE086 /* CoreData */,
+				A8CA22CC2A03A6E0001EE086 /* LocalPlanet.swift */,
+				A8CA22D42A03AF74001EE086 /* PlanetStore.swift */,
+				A810DC662A04CB6600314DD0 /* URLTransformer.swift */,
+			);
+			path = "Planet Cache";
+			sourceTree = "<group>";
+		};
+		A8CA22C22A03779E001EE086 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A8CA22CA2A039942001EE086 /* ManagedPlanet.swift */,
+				A8CA22D62A03B3DA001EE086 /* ManagedCache.swift */,
+				A8CA22CE2A03AD35001EE086 /* CoreDataPlanetStore.swift */,
+				A8CA22D02A03AF14001EE086 /* CoreDataHelpers.swift */,
+				A8CA22C32A03792B001EE086 /* PlanetStore.xcdatamodeld */,
+				A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,22 +545,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CA22C52A03792B001EE086 /* PlanetStore.xcdatamodeld in Sources */,
 				A8CA22B129FFFCFE001EE086 /* PlanetListViewModel.swift in Sources */,
 				A8A5E48829FE2C83002ACC4D /* PlanetLoader.swift in Sources */,
 				A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */,
+				A810DC652A04A76A00314DD0 /* LocalPlanetLoader.swift in Sources */,
 				A8CA229E29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift in Sources */,
+				A8CA22D72A03B3DA001EE086 /* ManagedCache.swift in Sources */,
 				A8CA22AC29FFD30E001EE086 /* Localized+PlanetList.swift in Sources */,
 				A8CA22B32A00BD35001EE086 /* MainQueueDispatchDecorator.swift in Sources */,
 				A8A5E48029FCE09F002ACC4D /* PlanetItemsMapper.swift in Sources */,
 				A8CA22C02A025A90001EE086 /* UITableView+Dequeueing.swift in Sources */,
 				A858117729FBAA4500406187 /* AppDelegate.swift in Sources */,
 				A8A5E48329FCEB9F002ACC4D /* Planet.swift in Sources */,
+				A810DC672A04CB6600314DD0 /* URLTransformer.swift in Sources */,
+				A8CA22CD2A03A6E0001EE086 /* LocalPlanet.swift in Sources */,
+				A8CA22CB2A039942001EE086 /* ManagedPlanet.swift in Sources */,
+				A8CA22CF2A03AD36001EE086 /* CoreDataPlanetStore.swift in Sources */,
 				A8CA22BE2A025799001EE086 /* PlanetCellController.swift in Sources */,
 				A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */,
 				A8CA22AF29FFFC7D001EE086 /* PlanetUIComposer.swift in Sources */,
 				A8CA229A29FFA4BF001EE086 /* PlanetListViewController.swift in Sources */,
+				A8CA22D12A03AF14001EE086 /* CoreDataHelpers.swift in Sources */,
 				A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */,
 				A858118129FBAA4500406187 /* JPMCChallenge.xcdatamodeld in Sources */,
+				A8CA22D52A03AF74001EE086 /* PlanetStore.swift in Sources */,
 				A8CA22B82A0102E5001EE086 /* UITableView+HeaderSizing.swift in Sources */,
 				A8CA22BA2A01046B001EE086 /* PlanetViewModel.swift in Sources */,
 				A8A5E48629FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift in Sources */,
@@ -488,10 +582,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A810DC5A2A03EE1A00314DD0 /* XCTestCase+PlanetStoreSpecs.swift in Sources */,
+				A810DC632A049CA100314DD0 /* PlanetStoreSpy.swift in Sources */,
 				A8A5E48D29FE3002002ACC4D /* RemotePlanetLoaderTests.swift in Sources */,
+				A810DC5C2A03EE9200314DD0 /* PlanetCacheTestHelpers.swift in Sources */,
 				A8A5E47829FCDDA3002ACC4D /* URLSessionHTTPClientTests.swift in Sources */,
 				A8A5E47D29FCDE14002ACC4D /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				A810DC5E2A049B4800314DD0 /* CoreDataPlanetStoreTests.swift in Sources */,
 				A8A5E47129FCDBBF002ACC4D /* URLProtocolStub.swift in Sources */,
+				A810DC582A03DDE600314DD0 /* PlanetStoreSpecs.swift in Sources */,
+				A810DC602A049BEE00314DD0 /* CachePlanetUseCaseTests.swift in Sources */,
 				A8A5E47B29FCDDDF002ACC4D /* SharedTestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,6 +950,16 @@
 			);
 			currentVersion = A858118029FBAA4500406187 /* JPMCChallenge.xcdatamodel */;
 			path = JPMCChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		A8CA22C32A03792B001EE086 /* PlanetStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A8CA22C42A03792B001EE086 /* CoreDataPlanetStore.xcdatamodel */,
+			);
+			currentVersion = A8CA22C42A03792B001EE086 /* CoreDataPlanetStore.xcdatamodel */;
+			path = PlanetStore.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
