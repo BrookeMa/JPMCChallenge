@@ -15,6 +15,8 @@
 		A810DC632A049CA100314DD0 /* PlanetStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC622A049CA100314DD0 /* PlanetStoreSpy.swift */; };
 		A810DC652A04A76A00314DD0 /* LocalPlanetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */; };
 		A810DC672A04CB6600314DD0 /* URLTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810DC662A04CB6600314DD0 /* URLTransformer.swift */; };
+		A81FF45F2A051A9D0028FED3 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81FF45E2A051A9D0028FED3 /* Reachability.swift */; };
+		A851985B2A05E20600AB6155 /* PlanetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A851985A2A05E20600AB6155 /* PlanetCache.swift */; };
 		A858117729FBAA4500406187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858117629FBAA4500406187 /* AppDelegate.swift */; };
 		A858117929FBAA4500406187 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858117829FBAA4500406187 /* SceneDelegate.swift */; };
 		A858117E29FBAA4500406187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A858117C29FBAA4500406187 /* Main.storyboard */; };
@@ -82,6 +84,8 @@
 		A810DC622A049CA100314DD0 /* PlanetStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetStoreSpy.swift; sourceTree = "<group>"; };
 		A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPlanetLoader.swift; sourceTree = "<group>"; };
 		A810DC662A04CB6600314DD0 /* URLTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTransformer.swift; sourceTree = "<group>"; };
+		A81FF45E2A051A9D0028FED3 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		A851985A2A05E20600AB6155 /* PlanetCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCache.swift; sourceTree = "<group>"; };
 		A858117329FBAA4500406187 /* JPMCChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMCChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A858117629FBAA4500406187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A858117829FBAA4500406187 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -302,6 +306,7 @@
 			children = (
 				A8A5E48229FCEB9F002ACC4D /* Planet.swift */,
 				A8A5E48729FE2C83002ACC4D /* PlanetLoader.swift */,
+				A851985A2A05E20600AB6155 /* PlanetCache.swift */,
 			);
 			path = "Planet Feature";
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				A8A5E48529FCF8D4002ACC4D /* HTTPURLResponse+StatusCode.swift */,
+				A81FF45E2A051A9D0028FED3 /* Reachability.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -406,8 +412,8 @@
 				A8CA22D62A03B3DA001EE086 /* ManagedCache.swift */,
 				A8CA22CE2A03AD35001EE086 /* CoreDataPlanetStore.swift */,
 				A8CA22D02A03AF14001EE086 /* CoreDataHelpers.swift */,
-				A8CA22C32A03792B001EE086 /* PlanetStore.xcdatamodeld */,
 				A810DC642A04A76A00314DD0 /* LocalPlanetLoader.swift */,
+				A8CA22C32A03792B001EE086 /* PlanetStore.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -549,6 +555,7 @@
 				A8CA22B129FFFCFE001EE086 /* PlanetListViewModel.swift in Sources */,
 				A8A5E48829FE2C83002ACC4D /* PlanetLoader.swift in Sources */,
 				A8A5E48A29FE2D37002ACC4D /* RemotePlanetLoader.swift in Sources */,
+				A851985B2A05E20600AB6155 /* PlanetCache.swift in Sources */,
 				A810DC652A04A76A00314DD0 /* LocalPlanetLoader.swift in Sources */,
 				A8CA229E29FFA8DF001EE086 /* PlanetListViewTableViewCell.swift in Sources */,
 				A8CA22D72A03B3DA001EE086 /* ManagedCache.swift in Sources */,
@@ -563,6 +570,7 @@
 				A8CA22CB2A039942001EE086 /* ManagedPlanet.swift in Sources */,
 				A8CA22CF2A03AD36001EE086 /* CoreDataPlanetStore.swift in Sources */,
 				A8CA22BE2A025799001EE086 /* PlanetCellController.swift in Sources */,
+				A81FF45F2A051A9D0028FED3 /* Reachability.swift in Sources */,
 				A8A5E46B29FCD77D002ACC4D /* HTTPClient.swift in Sources */,
 				A8CA22AF29FFFC7D001EE086 /* PlanetUIComposer.swift in Sources */,
 				A8CA229A29FFA4BF001EE086 /* PlanetListViewController.swift in Sources */,

@@ -11,9 +11,11 @@ final class PlanetListViewModel {
     typealias Observer<T> = (T) -> Void
     
     private let planetLoader: PlanetLoader
+    private let localPlanetLoader: PlanetCache
     
-    init(planetLoader: PlanetLoader) {
+    init(planetLoader: PlanetLoader, localPlanetLoader: PlanetCache) {
         self.planetLoader = planetLoader
+        self.localPlanetLoader = localPlanetLoader
     }
     
     var onLoadingStateChange: Observer<Bool>?
@@ -22,7 +24,26 @@ final class PlanetListViewModel {
     
     func loadPlanets() {
         onLoadingStateChange?(true)
+        Reachability.isConnectedToNetwork() ? loadRemotePlanet() : loadLocalPlanet()
+    }
+    
+    private func loadRemotePlanet() {
         planetLoader.load { [weak self] result in
+            switch result {
+            case let .success(planets):
+                self?.onPlanetsLoad?(planets)
+                self?.localPlanetLoader.save(planets, completion: { result in
+                    
+                })
+            case .failure:
+                self?.onLoadError?(Localized.PlanetList.loadError)
+            }
+            self?.onLoadingStateChange?(false)
+        }
+    }
+    
+    private func loadLocalPlanet() {
+        localPlanetLoader.load { [weak self] result in
             switch result {
             case let .success(planets):
                 self?.onPlanetsLoad?(planets)

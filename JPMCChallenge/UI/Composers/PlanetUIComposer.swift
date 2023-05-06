@@ -10,8 +10,9 @@ import UIKit
 public final class PlanetUIComposer {
     public init() {}
     
-    public static func planetListComposedWith(planetLoader: PlanetLoader) -> PlanetListViewController {
-        let viewModel = PlanetListViewModel(planetLoader: MainQueueDispatchDecorator(decoratee: planetLoader))
+    public static func planetListComposedWith(planetLoader: PlanetLoader, localPlanetLoader: PlanetCache) -> PlanetListViewController {
+        let viewModel = PlanetListViewModel(planetLoader: MainQueueDispatchDecorator(decoratee: planetLoader),
+                                            localPlanetLoader: MainQueueDispatchDecorator(decoratee: localPlanetLoader))
         
         let viewController = PlanetListViewController.makeWith(viewModel: viewModel)
         

@@ -30,3 +30,17 @@ extension MainQueueDispatchDecorator: PlanetLoader where T == PlanetLoader {
         }
     }
 }
+
+extension MainQueueDispatchDecorator: PlanetCache where T == PlanetCache {
+    func save(_ planets: [Planet], completion: @escaping (SaveResult) -> Void) {
+        decoratee.save(planets, completion: { [weak self] result in
+            self?.dispatch { completion(result) }
+        })
+    }
+    
+    func load(completion: @escaping (LoadResult) -> Void) {
+        decoratee.load { [weak self] result in
+            self?.dispatch { completion(result) }
+        }
+    }
+}

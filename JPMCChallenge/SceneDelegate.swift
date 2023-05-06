@@ -22,7 +22,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let session = URLSession(configuration: .ephemeral)
         let client = URLSessionHTTPClient(session: session)
         let remotePlanetLoader = RemotePlanetLoader(url: url, client: client)
-        let planetViewController = PlanetUIComposer.planetListComposedWith(planetLoader: remotePlanetLoader)
+        
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let applicationDocumentsDirectory = urls[urls.count-1]
+        let storeURL = applicationDocumentsDirectory.appendingPathComponent("JPMCChallenge.sqlite")
+        let store = try! CoreDataPlanetStore(storeURL: storeURL)
+        let localPlanetLoader = LocalPlanetLoader(store: store, currentDate: Date.init)
+    
+        let planetViewController = PlanetUIComposer.planetListComposedWith(planetLoader: remotePlanetLoader, localPlanetLoader: localPlanetLoader)
         
         window?.rootViewController = planetViewController
     }

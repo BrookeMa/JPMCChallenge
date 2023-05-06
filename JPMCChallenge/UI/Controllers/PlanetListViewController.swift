@@ -45,10 +45,6 @@ public final class PlanetListViewController: UITableViewController, UITableViewD
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return cellController(forRowAt: indexPath).view(in: tableView, cellForRowAt: indexPath)
     }
-    
-//    public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
 
     private func cellController(forRowAt indexPath: IndexPath) -> PlanetCellController {
         return tableModel[indexPath.row]

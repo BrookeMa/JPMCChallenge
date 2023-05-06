@@ -17,16 +17,15 @@ public final class LocalPlanetLoader {
     }
 }
 
-extension LocalPlanetLoader {
-    public typealias SaveResult = Result<Void, Error>
+extension LocalPlanetLoader: PlanetCache {
     
-    public func save(_ articles: [Planet], completion: @escaping (SaveResult) -> Void) {
+    public func save(_ planets: [Planet], completion: @escaping (PlanetCache.SaveResult) -> Void) {
         store.deleteCachedPlanet { [weak self] deletionResult in
             guard let self = self else { return }
             
             switch deletionResult {
             case .success:
-                self.cache(articles, with: completion)
+                self.cache(planets, with: completion)
                 
             case let .failure(error):
                 completion(.failure(error))
@@ -34,11 +33,25 @@ extension LocalPlanetLoader {
         }
     }
     
-    private func cache(_ articles: [Planet], with completion: @escaping (SaveResult) -> Void) {
-        store.insert(articles.toLocal(), timestamp: currentDate()) { [weak self] InsertionResult in
+    public func load(completion: @escaping (PlanetCache.LoadResult) -> Void) {
+        store.retrieve(completion: { [weak self] result in
             guard self != nil else { return }
             
-            completion(InsertionResult)
+            switch result {
+            case let .success(cache):
+                completion(.success(cache?.planets.toModels() ?? []))
+
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        })
+    }
+    
+    private func cache(_ planets: [Planet], with completion: @escaping (SaveResult) -> Void) {
+        store.insert(planets.toLocal(), timestamp: currentDate()) { [weak self] insertionResult in
+            guard self != nil else { return }
+            
+            completion(insertionResult)
         }
     }
 }
