@@ -32,9 +32,7 @@ final class PlanetListViewModel {
             switch result {
             case let .success(planets):
                 self?.onPlanetsLoad?(planets)
-                self?.localPlanetLoader.save(planets, completion: { result in
-                    
-                })
+                self?.saveToLocalStore(planets)
             case .failure:
                 self?.onLoadError?(Localized.PlanetList.loadError)
             }
@@ -51,6 +49,12 @@ final class PlanetListViewModel {
                 self?.onLoadError?(Localized.PlanetList.loadError)
             }
             self?.onLoadingStateChange?(false)
+        }
+    }
+    
+    private func saveToLocalStore(_ planets: [Planet], completion: (() -> Void)? = nil) {
+        localPlanetLoader.save(planets) { result in
+            completion?()
         }
     }
 }
