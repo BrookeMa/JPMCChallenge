@@ -12,7 +12,7 @@ public final class PlanetListViewTableViewCell: UITableViewCell {
     public lazy var nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .darkGray
-        label.text = "Planet Name"
+        label.text = Localized.PlanetList.name
         contentView.addSubview(label)
         
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +43,7 @@ public final class PlanetListViewTableViewCell: UITableViewCell {
     public lazy var rotationPeriodLabel: UILabel = {
         let label = UILabel()
         label.textColor = .darkGray
-        label.text = "Rotation Period"
+        label.text = Localized.PlanetList.rotationPeriod
         contentView.addSubview(label)
 
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -74,7 +74,7 @@ public final class PlanetListViewTableViewCell: UITableViewCell {
     public lazy var orbitalPeriodLabel: UILabel = {
         let label = UILabel()
         label.textColor = .darkGray
-        label.text = "Orbital Period"
+        label.text = Localized.PlanetList.orbitalPeriod
         contentView.addSubview(label)
 
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -105,7 +105,7 @@ public final class PlanetListViewTableViewCell: UITableViewCell {
     public lazy var diameterLabel: UILabel = {
         let label = UILabel()
         label.textColor = .darkGray
-        label.text = "Diameter"
+        label.text = Localized.PlanetList.diameter
         contentView.addSubview(label)
 
         label.translatesAutoresizingMaskIntoConstraints = false
